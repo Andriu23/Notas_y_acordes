@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    height: 10vh;
+}
+
+h1 {
+    color: blue;
+}
+
+a:hover {
+    color: black;
+}
+
