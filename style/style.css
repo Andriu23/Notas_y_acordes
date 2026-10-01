@@ -1,38 +1,42 @@
 /* //HEADER */
 body {
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    color: #ffffff;
     margin: 0;
-    box-sizing: border-box;
-    background-color: blanchedalmond;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    height: 10vh;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1rem 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-h1 {
-    color: white;
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #f39c12;
 }
 
-nav {
-    display: flex;
-    gap: 20px ;
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-a {
-    color: aqua;
-}
-
-a:hover {
-    color: yellow;
-    font-weight: bold;
+nav a:hover {
+    color: #f39c12;
 }
 
 /* FIN HEAER */
@@ -114,4 +118,21 @@ img {
 
 .date {
     font-style: italic;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 0.5rem;
 }
