@@ -122,7 +122,10 @@ img {
 
 footer {
     background-color: rgba(0, 0, 0, 0.4);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     font-size: 0.9rem;
     color: #aaa;
@@ -135,4 +138,8 @@ footer ul {
     justify-content: center;
     gap: 15px;
     margin-bottom: 0.5rem;
+}
+
+footer p {
+    text-align: center;
 }
