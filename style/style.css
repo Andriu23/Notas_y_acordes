@@ -67,7 +67,7 @@ section {
 }
 
 h2 {
-    color: blue;
+    color: white;
     font-size: xx-large;
 }
 
@@ -87,10 +87,15 @@ article {
     width: 300px;
 }
 
+H3 {
+    color: black;
+}
+
 p {
     width: 250px;
     text-align: left;
     font-size: large;
+    color: black;
 }
 
 
