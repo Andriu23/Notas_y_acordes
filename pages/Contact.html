@@ -8,8 +8,6 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
     <title>Notas y Acordes | Contacto</title>
-
-
 </head>
 
 <body>
@@ -40,6 +38,22 @@
             <div class="contact-content">
                 <h2>¡Ponte en contacto con nosotros!</h2>
                 <p>¿Tienes dudas, sugerencias o deseas colaborar? Escríbenos directamente.</p>
+
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <div id="mensaje-alerta" class="alert alert-success alert-dismissible d-none mt-3" role="alert">
+                        Mensaje enviado
+                        <button type="button" class="btn-close" aria-label="Cerrar"></button>
+                    </div>
+                </form>
                 
                 <ul class="contact-info">
                     <li>
