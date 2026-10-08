@@ -4,44 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/about.css">
     <title>Notas y Acordes | Nosotros</title>
 </head>
 
 <body>
-    <header>
-        <h1>Notas y Acordes</h1>
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="About.html">Nosotros</a>
-            <a href="Contact.html">Contacto</a>
-        </nav>
-    </header>
-    <main>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="../index.html">Notas y Acordes</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="About.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contacto</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+<main>
         <section class="contact-card">
-            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="Contacto Notas y Acordes">
-            
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80"
+                alt="Contacto Notas y Acordes">
+
             <div class="contact-content">
                 <h2>Sobre Nosotros</h2>
                 <p>Notas y Acordes es un blog dedicado a la difusión de artistas emergentes y sus propuestas musicales.
-                Creemos en la fuerza transformadora del arte humano, en el valor de la disciplina, el proceso creativo y la voz única de cada autor</p>
-                
+                    Creemos en la fuerza transformadora del arte humano, en el valor de la disciplina, el proceso
+                    creativo y la voz única de cada autor</p>
+
             </div>
         </section>
 
     </main>
 
-    <footer>
-        <ul>
-            <li>Yuliana Quintero</li>
-            <li>Jennyfer Choque</li>
-            <li>Andres Satoba</li>
-            <li>Juan Calderon</li>
-            <li>Pedro Saravia</li>
-        </ul>
-        <p>Email <strong>contacto@notasyacordes.com</strong></p>
-        <p>@Notas y Acordes</p>
+    <footer class="bg-dark text-light mt-5 pt-4 pb-3">
+        <div class="container">
+            <div class="row gy-4">
+
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Notas y Acordes</h5>
+                    <p class="small text-secondary mb-0">
+                        Blog de música: artistas, géneros y recomendaciones.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Autores</h6>
+                    <ul class="list-unstyled small mb-0">
+                        <li>Yuliana Quintero</li>
+                        <li>Jennyfer Choque</li>
+                        <li>Andres Satoba</li>
+                        <li>Juan Calderon</li>
+                        <li>Pedro Saravia</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Navegación</h6>
+                    <ul class="list-unstyled small mb-3">
+                        <li><a class="link-light text-decoration-none" href="../index.html">Inicio</a></li>
+                        <li><a class="link-light text-decoration-none" href="About.html">Nosotros</a></li>
+                        <li><a class="link-light text-decoration-none" href="Contact.html">Contacto</a></li>
+                    </ul>
+                    <h6 class="fw-bold">Contacto</h6>
+                    <p class="small mb-0">contacto@notasyacordes.com</p>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary">
+            <p class="text-center small text-secondary mb-0">
+                &copy; 2026 Notas y Acordes. Todos los derechos reservados.
+            </p>
+        </div>
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
