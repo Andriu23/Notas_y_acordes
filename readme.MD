@@ -85,7 +85,7 @@ La interfaz se adapta a diferentes tamaños de pantalla, como computadores, tabl
 | **Juan Pablo Calderón** | Product Owner    |
 | **Andrés Satoba**       | Development Team |
 | **Pedro Saravia**       | Development Team |
-| **Perfil del Proyecto** | Development Team |
+| **Yuliana Quintero**    | Development Team |
 
 ---
 
