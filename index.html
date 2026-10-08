@@ -35,35 +35,14 @@
 
   </nav>
   
-    <main>
-        <section>
-            <h2>Artistas</h2>
-            <article>
-                <div class="artista">
-                    <h3>Lola Young</h3>
-                    <p>Cantante británica de pop y soul conocida por sus letras personales y estilo alternativo.</p>
-
-                </div>
-                <div>
-                    <span>Pop / Soul / R&B alternativo</span>
-                    <a href="https://www.lola-young.com/?utm_source=chatgpt.com"><img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHMTAOBylzqItl5oadeEOruH5GtRpBWyF9qTVrXQEe1A&s=10"
-                            alt="Lola Young" title="Lola Young"></a>
-                    <p class="date">4 de enero de 2001</p>
-                </div>
-            </article>
-            <article>
-                <div class="artista">
-                    <h3>Alex Warren</h3>
-                    <p>Cantante y compositor estadounidense que ganó gran popularidad con su canción Ordinary.</p>
-                </div>
-
-                <div>
-                    <span>Pop</span>
-                    <a href="https://www.alexwarrenofficial.com/?utm_source=chatgpt.com"><img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU5omSNdO8S5AR8IwXp81_naDCKOWQPDUuXzr4mEE-tQ&s=10"
-                            alt="Alex Warren" title="Alex Warren"></a>
-                    <p class="date">18 de marzo de 2000</p>
+    <main class="container my-5">
+        <div class="row g-4">
+            <article class="col-md-2">
+                <div class="card publicidad text-center">
+                    <div class="card-body">
+                        <h5>Publicidad</h5>
+                        <p>Espacio publicitario</p>
+                    </div>
                 </div>
             </article>
             <section class="col-md-8">
@@ -72,31 +51,89 @@
                     <h1 class="fw-bold mt-2">Notas y Acordes</h1>
                     <p class="text-secondary">Descubre nuevos artistas, canciones y propuestas musicales.</p>
                 </div>
-
-                <div>
-                    <span>Pop alternativo / Indie</span>
-                    <a href="https://www.sombrmusic.com/?utm_source=chatgpt.com"><img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfkBv1P15xHfzPtHgVVPKkvYx_Ln1CKtVcMFIVjAjQcw&s=10"
-                            alt="Sombr" title="Sombr"></a>
-                    <p class="date">5 de julio de 2005</p>
+                <article class="card artista-destacado mb-5 shadow-sm">
+                    <img src="" class="card-img-top" alt="Artista destacado">
+                    <div class="card-body">
+                        <span class="badge text-bg-dark">Artista destacado</span>
+                        <h2 class="h3 mt-2">Nuevas voces que vale la pena escuchar</h2>
+                        <p class="text-secondary">Conoce artistas con propuestas diferentes y descubre nuevas canciones para escuchar.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </article>
+                <h2 class="text-center mb-4">Nuevos artistas</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card artista-card h-100 shadow-sm">
+                            <img src="" class="card-img-top" alt="Lola Young">
+                            <div class="card-body">
+                                <h3 class="h5">Lola Young</h3>
+                                <p class="text-secondary">Artista británica con un estilo auténtico.</p>
+                                <a href="#" class="btn btn-outline-primary">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card artista-card h-100 shadow-sm">
+                            <img src="" class="card-img-top" alt="Alex Warren">
+                            <div class="card-body">
+                                <h3 class="h5">Alex Warren</h3>
+                                <p class="text-secondary">Cantante y compositor de nuevas propuestas.</p>
+                                <a href="#" class="btn btn-outline-primary">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card artista-card h-100 shadow-sm">
+                            <img src="" class="card-img-top" alt="Sombr">
+                            <div class="card-body">
+                                <h3 class="h5">Sombr</h3>
+                                <p class="text-secondary">Una propuesta joven con sonidos alternativos.</p>
+                                <a href="#" class="btn btn-outline-primary">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card artista-card h-100 shadow-sm">
+                            <img src="" class="card-img-top" alt="No Hablemos De Eso">
+                            <div class="card-body">
+                                <h3 class="h5">No Hablemos De Eso</h3>
+                                <p class="text-secondary">Una propuesta musical para descubrir.</p>
+                                <a href="#" class="btn btn-outline-primary">Conocer más</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </article>
-            <article>
-                <div class="artista">
-                    <h3>No Hablemos De Eso</h3>
-                    <p>No Hablemos De Eso es un grupo emergente de rock que combina sonidos alternativos con letras que
-                        buscan conectar con diferentes experiencias y emociones.</p>
+                <section class="mt-5">
+                    <h2 class="text-center fw-bold mb-4">Escucha nuevas propuestas</h2>
+                    <div class="ratio ratio-16x9 video-musical">
+                        <iframe src="https://www.youtube.com/embed/Ey8gm1W-e1Y" title="Another Brick in the Wall, Pt. 2"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </section>
+            </section>
+            <aside class="col-md-2">
+                <div class="card noticias shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">📰 Noticias</h5>
+                        <hr>
+                        <article class="mb-3">
+                            <h6 class="fw-bold">Nuevos lanzamientos</h6>
+                            <p class="small text-secondary">Conoce las novedades de la escena musical.</p>
+                        </article>
+                        <article class="mb-3">
+                            <h6 class="fw-bold">Artistas emergentes</h6>
+                            <p class="small text-secondary">Descubre nuevos talentos y propuestas.</p>
+                        </article>
+                        <article>
+                            <h6 class="fw-bold">Próximamente</h6>
+                            <p class="small text-secondary">Más contenido musical en Notas y Acordes.</p>
+                        </article>
+                    </div>
                 </div>
-
-                <div>
-                    <span>Rock</span>
-                    <a href="https://music.apple.com/us/artist/no-hablemos-de-eso/1783146449"><img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKfrUpdvvqhtQOIpABhEpJQMYyaVqsnxCCjKFwV5Xhgw&s=10"
-                            alt="No Hablemos De Eso" title="No Hablemos De Eso"></a>
-                    <p class="date">Reconocimiento: 2024</p>
-                </div>
-            </article>
-        </section>
+            </aside>
+        </div>
     </main>
     <footer class="bg-dark text-light mt-5 pt-4 pb-3">
         <div class="container">

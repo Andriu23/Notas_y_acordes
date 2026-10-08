@@ -8,7 +8,30 @@ main {
     padding-bottom: 40px;
 }
 
+/* Títulos */
 
+main h1 {
+    color: #212529;
+}
+
+main h2 {
+    color: #212529;
+}
+
+/* =========================
+   PUBLICIDAD
+========================= */
+
+.publicidad {
+    background-color: #e9ecef;
+    border: 1px dashed #6c757d;
+    border-radius: 8px;
+    color: #6c757d;
+}
+
+.publicidad h5 {
+    font-weight: bold;
+}
 
 .publicidad p {
     font-size: 14px;
@@ -97,16 +120,30 @@ main {
     border: none;
 }
 
-footer p {
-    text-align: center;
-    color: white;
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 767px) {
+
+    main {
+        padding-top: 10px;
+    }
+
+    .publicidad {
+        margin-bottom: 10px;
+    }
+
+    .noticias {
+        margin-top: 10px;
+    }
+
+    .artista-destacado img {
+        height: 220px;
+    }
+
+    .artista-card img {
+        height: 200px;
+    }
 }
-
-
-  .navbar > .container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-  }
