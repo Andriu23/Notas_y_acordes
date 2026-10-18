@@ -1,149 +1,151 @@
-/* =========================
-   MAIN
-========================= */
-
+/* Contenido principal */
 main {
-    background-color: #f8f9fa;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    background: var(--blanco);
 }
 
-/* Títulos */
-
-main h1 {
-    color: #212529;
+main > .row {
+    background: var(--lila-claro);
+    border-radius: 10px;
 }
 
-main h2 {
-    color: #212529;
+.publicidad, .artista-destacado, .noticias {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
 }
-
-/* =========================
-   PUBLICIDAD
-========================= */
 
 .publicidad {
-    background-color: #e9ecef;
-    border: 1px dashed #6c757d;
-    border-radius: 8px;
-    color: #6c757d;
+    background: var(--blanco);
+    color: var(--morado-oscuro);
 }
 
-.publicidad h5 {
-    font-weight: bold;
+.publicidad h5, .noticias h6 {
+    color: var(--morado-musical);
 }
 
-.publicidad p {
-    font-size: 14px;
-}
-
-
-/* =========================
-   ARTISTA DESTACADO
-========================= */
-
-.artista-destacado {
+.btn-publicidad, .artista-destacado .btn, #artistas .btn {
+    background: var(--morado-musical);
+    color: var(--blanco);
     border: none;
-    overflow: hidden;
 }
 
-.artista-destacado img {
+.btn-publicidad:hover, .artista-destacado .btn:hover,
+#artistas .btn:hover {
+    background: var(--morado-oscuro);
+    color: var(--amarillo-dorado);
+}
+
+/* Artista destacado */
+#destacado {
     height: 300px;
-    object-fit: cover;
+    background-image: url("/img/index/destacado.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.artista-destacado, #artistas .card {
+    background: var(--blanco);
+    transition: transform 0.3s;
+}
 
-/* =========================
-   TARJETAS DE ARTISTAS
-========================= */
+.artista-destacado:hover, #artistas .card:hover {
+    transform: translateY(-4px);
+}
 
-.artista-card {
-    border: none;
+.artista-destacado h2, .artista-destacado p,
+#artistas .card-title, #artistas .card-text {
+    color: var(--morado-oscuro);
+}
+
+.badge {
+    background: var(--amarillo-dorado);
+    color: var(--morado-oscuro);
+}
+
+/* Tarjetas de artistas */
+#artistas .card {
+    height: 100%;
     overflow: hidden;
-    transition: transform 0.3s ease;
 }
 
-.artista-card:hover {
-    transform: translateY(-5px);
-}
-
-.artista-card img {
-    height: 220px;
+#artistas .card-img-top {
+    height: 210px;
     object-fit: cover;
 }
 
-.artista-card .card-body {
+#artistas .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+#artistas .btn {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.titulo-artistas {
+    color: var(--morado-oscuro);
+    border-bottom: 2px solid var(--amarillo-dorado);
+    padding-bottom: 8px;
+}
+
+/* Video */
+.video-propuestas {
     padding: 20px;
+    background: var(--lila-claro);
+    border-radius: 12px;
 }
 
-.artista-card h3 {
-    font-weight: bold;
+.video-propuestas h2 {
+    color: var(--morado-oscuro);
 }
 
+.video-propuestas .ratio {
+    max-width: 700px;
+    margin: auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
 
-/* =========================
-   NOTICIAS
-========================= */
-
+/* Noticias */
 .noticias {
-    background-color: #ffffff;
+    background: var(--lila-claro);
 }
 
-.noticias .card-body {
-    padding: 20px;
-}
-
-.noticias h5 {
-    font-weight: bold;
-}
-
-.noticias h6 {
-    margin-bottom: 5px;
-}
-
-.noticias p {
-    margin-bottom: 0;
-    line-height: 1.4;
-}
-
-
-/* =========================
-   VIDEO
-========================= */
-
-.video-musical {
-    overflow: hidden;
+.noticias article {
+    padding: 10px;
+    background: var(--blanco);
     border-radius: 8px;
 }
 
-.video-musical iframe {
-    border: none;
+.noticias .card-title {
+    color: var(--morado-oscuro);
 }
 
+.noticias hr {
+    border-color: var(--morado-musical);
+}
 
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 767px) {
-
-    main {
-        padding-top: 10px;
-    }
-
-    .publicidad {
-        margin-bottom: 10px;
-    }
-
-    .noticias {
-        margin-top: 10px;
-    }
-
-    .artista-destacado img {
+/* Responsive */
+@media (max-width: 576px) {
+    #destacado {
         height: 220px;
     }
 
-    .artista-card img {
-        height: 200px;
+    .artista-destacado .card-body,
+    .video-propuestas {
+        padding: 12px;
+    }
+
+    .artista-destacado h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 991px) {
+    .noticias {
+        max-width: 500px;
+        margin: 0 auto;
     }
 }

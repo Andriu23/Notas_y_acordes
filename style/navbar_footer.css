@@ -1,0 +1,28 @@
+:root {
+    --morado-oscuro: #1E1B2E; /* Color principal para el navbar, el footer y los fondos oscuros. Transmite identidad y profundidad. */
+    --morado-musical: #6C4AB6; /* Para botones principales, enlaces activos e íconos destacados. Representa creatividad. */
+    --amarillo-dorado: #F2B84B; /* Para pequeños detalles, etiquetas y elementos que quieras resaltar. Evoca luces de escenario y energía. */
+    --lila-claro: #F5F3FA; /* Para fondos de secciones y tarjetas. Aporta una apariencia limpia y moderna. */
+    --blanco: #FFFFFF; /* Para fondos, textos sobre colores oscuros y espacios de lectura. Mejora la claridad visual. */
+}
+
+/* Navbar y footer */
+.navbar, footer {
+    background: var(--morado-oscuro);
+}
+
+.navbar-brand img, footer img {
+    width: 50px;
+}
+
+.navbar span, footer h5 span {
+    color: var(--amarillo-dorado);
+}
+
+.nav-link.active {
+    background: var(--morado-musical);
+}
+
+div p:first-child {
+    color: var(--amarillo-dorado);
+}

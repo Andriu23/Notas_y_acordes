@@ -4,116 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/style.css">
     <title>Notas y Acordes | Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="shortcut icon" href="/img/index/nota-musical.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style/navbar_footer.css">
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 
 <body>
-    
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="/img/index/nota-musical.png" alt="Nota"></a>
+            <h3 class="text-light">Notas & <span>Acordes</span></h3>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-end" id="navbarText">
+                <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active fw-semibold rounded-2 p-2" aria-current="page" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link inactive" href="/pages/About.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link inactive" href="/pages/Contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-      <a class="navbar-brand" href="index.html">Notas y Acordes</a>
+    <main class="container-fluid d-flex justify-content-center">
+        <div class="col-12 col-xl-10 row g-4 my-4">
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="pages/About.html">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="pages/Contact.html">Contacto</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-  </nav>
-  
-    <main class="container my-5">
-        <div class="row g-4">
-            <article class="col-md-2">
-                <div class="card publicidad text-center">
-                    <div class="card-body">
-                        <h5>Publicidad</h5>
-                        <p>Espacio publicitario</p>
-                    </div>
-                </div>
-            </article>
-            <section class="col-md-8">
-                <div class="text-center mb-4">
-                    <span class="badge text-bg-primary">Blog musical</span>
-                    <h1 class="fw-bold mt-2">Notas y Acordes</h1>
-                    <p class="text-secondary">Descubre nuevos artistas, canciones y propuestas musicales.</p>
-                </div>
-                <article class="card artista-destacado mb-5 shadow-sm">
-                    <img src="" class="card-img-top" alt="Artista destacado">
-                    <div class="card-body">
-                        <span class="badge text-bg-dark">Artista destacado</span>
-                        <h2 class="h3 mt-2">Nuevas voces que vale la pena escuchar</h2>
-                        <p class="text-secondary">Conoce artistas con propuestas diferentes y descubre nuevas canciones para escuchar.</p>
-                        <a href="#" class="btn btn-primary">Leer más</a>
+            <div class="col-12 col-md-3 col-lg-2 d-flex flex-column gap-2">
+                <h2 class="fw-bold mb-4">Publicidad</h2>
+                <article class="card publicidad">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Conciertos en vivo</h5>
+                        <p class="card-text">Promociona tus eventos musicales.</p>
+                        <a href="#" class="btn btn-publicidad">Más información</a>
                     </div>
                 </article>
-                <h2 class="text-center mb-4">Nuevos artistas</h2>
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="card artista-card h-100 shadow-sm">
-                            <img src="" class="card-img-top" alt="Lola Young">
-                            <div class="card-body">
-                                <h3 class="h5">Lola Young</h3>
-                                <p class="text-secondary">Artista británica con un estilo auténtico.</p>
-                                <a href="#" class="btn btn-outline-primary">Conocer más</a>
-                            </div>
-                        </div>
+
+                <article class="card publicidad">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Tienda musical</h5>
+                        <p class="card-text">Instrumentos y accesorios musicales.</p>
+                        <a href="#" class="btn btn-publicidad">Ver productos</a>
                     </div>
-                    <div class="col-md-6">
-                        <div class="card artista-card h-100 shadow-sm">
-                            <img src="" class="card-img-top" alt="Alex Warren">
-                            <div class="card-body">
-                                <h3 class="h5">Alex Warren</h3>
-                                <p class="text-secondary">Cantante y compositor de nuevas propuestas.</p>
-                                <a href="#" class="btn btn-outline-primary">Conocer más</a>
-                            </div>
-                        </div>
+                </article>
+
+                <article class="card publicidad">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Academia musical</h5>
+                        <p class="card-text">Aprende a tocar tu instrumento favorito.</p>
+                        <a href="#" class="btn btn-publicidad">Ver cursos</a>
                     </div>
-                    <div class="col-md-6">
-                        <div class="card artista-card h-100 shadow-sm">
-                            <img src="" class="card-img-top" alt="Sombr">
-                            <div class="card-body">
-                                <h3 class="h5">Sombr</h3>
-                                <p class="text-secondary">Una propuesta joven con sonidos alternativos.</p>
-                                <a href="#" class="btn btn-outline-primary">Conocer más</a>
-                            </div>
-                        </div>
+                </article>
+
+                <article class="card publicidad">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Artistas emergentes</h5>
+                        <p class="card-text">Promociona tus nuevos lanzamientos.</p>
+                        <a href="#" class="btn btn-publicidad">Descubrir más</a>
                     </div>
-                    <div class="col-md-6">
-                        <div class="card artista-card h-100 shadow-sm">
-                            <img src="" class="card-img-top" alt="No Hablemos De Eso">
-                            <div class="card-body">
-                                <h3 class="h5">No Hablemos De Eso</h3>
-                                <p class="text-secondary">Una propuesta musical para descubrir.</p>
-                                <a href="#" class="btn btn-outline-primary">Conocer más</a>
-                            </div>
-                        </div>
+                </article>
+            </div>
+            <section class="col-12 col-md-9 col-lg-8 mt-2 d-flex flex-column gap-4">
+                <div class="text-center mb-4">
+                    <span class="badge">Blog musical</span>
+                    <h1 class="fw-bold mt-2">Notas y Acordes</h1>
+                    <p>Descubre nuevos artistas, canciones y propuestas musicales.</p>
+                </div>
+                <article class="card artista-destacado mb-3 shadow-sm">
+                    <div class="card-img-top" alt="Artista destacado" id="destacado"></div>
+                    <div class="card-body">
+                        <span class="badge">Artista destacado</span>
+                        <h2 class="mt-2">Nuevas voces que vale la pena escuchar</h2>
+                        <p>Conoce artistas con propuestas diferentes y descubre nuevas canciones para escuchar.</p>
+                        <a href="#" class="btn">Leer más</a>
+                    </div>
+                </article>
+                <h2 class="titulo-artistas text-center">Nuevos artistas</h2>
+                <div class="row g-4" id="artistas">
+
+                </div>
+                <div class="w-100 mb-4 video-propuestas">
+                    <h2 class="text-center fw-bold">Escucha nuevas propuestas</h2>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/gm3J5adMXfw?si=BilOc6SdmdMfKD9E"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
-                <section class="mt-5">
-                    <h2 class="text-center fw-bold mb-4">Escucha nuevas propuestas</h2>
-                    <div class="ratio ratio-16x9 video-musical">
-                        <iframe src="https://www.youtube.com/embed/Ey8gm1W-e1Y" title="Another Brick in the Wall, Pt. 2"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </section>
             </section>
-            <aside class="col-md-2">
+
+            <aside class="col-12 col-md-12 col-lg-2">
                 <div class="card noticias shadow-sm border-0">
                     <div class="card-body">
                         <h5 class="card-title text-center">📰 Noticias</h5>
@@ -133,52 +118,50 @@
                     </div>
                 </div>
             </aside>
+
         </div>
+
     </main>
-    <footer class="bg-dark text-light mt-5 pt-4 pb-3">
-        <div class="container">
-            <div class="row gy-4">
 
-                <div class="col-md-4">
-                    <h5 class="fw-bold">Notas y Acordes</h5>
-                    <p class="small text-secondary mb-0">
-                        Blog de música: artistas, géneros y recomendaciones.
-                    </p>
+    <footer class="text-light text-center py-4">
+        <div class="container d-flex justify-content-between flex-wrap">
+            <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex flex-column align-items-center flex-wrap">
+                    <img src="/img/index/nota-musical.png" alt="Nota">
+                    <h5 class="fw-bold mt-3">Notas & <span>Acordes</span></h5>
                 </div>
-
-                <div class="col-md-4">
-                    <h6 class="fw-bold">Autores</h6>
-                    <ul class="list-unstyled small mb-0">
-                        <li>Yuliana Quintero</li>
-                        <li>Jennyfer Choque</li>
-                        <li>Andres Satoba</li>
-                        <li>Juan Calderon</li>
-                        <li>Pedro Saravia</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4">
-                    <h6 class="fw-bold">Navegación</h6>
-                    <ul class="list-unstyled small mb-3">
-                        <li><a class="link-light text-decoration-none" href="index.html">Inicio</a></li>
-                        <li><a class="link-light text-decoration-none" href="pages/About.html">Nosotros</a></li>
-                        <li><a class="link-light text-decoration-none" href="pages/Contact.html">Contacto</a></li>
-                    </ul>
-                    <h6 class="fw-bold">Contacto</h6>
-                    <p class="small mb-0">contacto@notasyacordes.com</p>
-                </div>
-
+                <p class="small">Descubre nuevos sonidos y apoya el talento emergente.</p>
             </div>
 
-            <hr class="border-secondary">
-            <p class="text-center small text-secondary mb-0">
-                &copy; 2026 Notas y Acordes. Todos los derechos reservados.
-            </p>
+            <div class="col-md-4">
+                <p class="fw-bold">Autores</p>
+                <ul class="list-unstyled small mb-0">
+                    <li>Yuliana Quintero</li>
+                    <li>Jennyfer Choque</li>
+                    <li>Andres Satoba</li>
+                    <li>Juan Calderon</li>
+                    <li>Pedro Saravia</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <p class="fw-bold">Navegación</p>
+                <ul class="list-unstyled small mb-3">
+                    <li><a class="link-light text-decoration-none" href="#">Inicio</a></li>
+                    <li><a class="link-light text-decoration-none" href="/pages/About.html">Nosotros</a></li>
+                    <li><a class="link-light text-decoration-none" href="/pages/Contact.html">Contacto</a></li>
+                </ul>
+                <div>
+                    <p class="fw-bold">Contacto</p>
+                    <p class="small mb-0">contacto@notasyacordes.com</p>
+                </div>
+            </div>
         </div>
+        <hr>
+        <p class="text-secondary mb-0">© 2026 Notas & Acordes. Todos los derechos reservados.</p>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <script src="/js/artistas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>
