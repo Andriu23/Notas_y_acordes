@@ -21,6 +21,7 @@
 
 .nav-link.active {
     background: var(--morado-musical);
+    display: inline-block;
 }
 
 div p:first-child {

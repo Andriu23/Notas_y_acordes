@@ -1,122 +1,183 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-header {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 1.8rem;
-    color: #f39c12;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 1.5rem;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #f39c12;
-}
-
 main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+    background: var(--blanco);
 }
 
-.contact-card {
-    background-color: #252538;
+main > .row {
+    background: var(--lila-claro);
+    border-radius: 10px;
+}
+
+.publicidad, .noticias {
+    border: none;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-    max-width: 450px;
-    width: 100%;
     overflow: hidden;
-    text-align: center;
 }
 
-.contact-card img {
+.publicidad {
+    background: var(--blanco);
+    color: var(--morado-oscuro);
+}
+
+.publicidad h5, .noticias h6 {
+    color: var(--morado-musical);
+}
+
+.btn-publicidad {
+    background: var(--morado-musical);
+    color: var(--blanco);
+    border: none;
+}
+
+.btn-publicidad:hover, .artista-destacado .btn:hover,
+#artistas .btn:hover {
+    background: var(--morado-oscuro);
+    color: var(--amarillo-dorado);
+}
+
+/* Presentación de Nosotros */
+.contacto-intro {
+    padding: 30px 20px;
+    background: var(--lila-claro);
+    color: var(--morado-oscuro);
+    border-radius: 16px;
+}
+
+.contacto-intro .badge {
+    background: var(--amarillo-dorado);
+    color: var(--morado-oscuro);
+}
+
+.contacto-intro h1 {
+    color: var(--morado-musical);
+}
+
+.contacto-intro strong {
+    display: block;
+    font-size: 20px;
+}
+
+.contacto-intro p {
+    line-height: 1.7;
+}
+
+.contacto-intro .bi {
+    color: var(--morado-musical);
+}
+
+/* Formulario */
+.contacto-formulario {
+    background-color: var(--blanco);
+    color: var(--morado-oscuro);
+    border: 1px solid var(--lila-claro);
+    border-radius: 16px;
+}
+
+.contacto-formulario legend {
+    border-bottom: 2px solid var(--amarillo-dorado);
+    padding-bottom: 12px;
+}
+
+.contacto-img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
 }
 
-.contact-content {
-    padding: 2rem;
+.contacto-formulario .form-label {
+    color: var(--morado-oscuro);
+    font-weight: 600;
 }
 
-
-.contact-content > p {
-    color: white;
+.contacto-formulario .form-control {
+    color: var(--morado-oscuro);
+    background: var(--blanco);
+    border: 1px solid var(--lila-claro);
+    border-radius: 8px;
 }
 
-.contact-content h2 {
-    margin-top: 0;
-    color: #f39c12;
-    font-size: 1.6rem;
+.contacto-formulario .form-control:focus {
+    border-color: var(--morado-musical);
+    box-shadow: 0 0 0 3px var(--lila-claro);
 }
 
-.contact-info {
-    list-style: none;
-    padding: 0;
-    margin: 1.5rem 0;
-    text-align: left;
+/* Botón */
+.btn-contacto {
+    background: var(--morado-musical);
+    color: var(--blanco);
+    border: 1px solid var(--morado-musical);
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-.contact-info li {
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
+.btn-contacto:hover {
+    background: var(--morado-oscuro);
+    border-color: var(--morado-oscuro);
+    color: var(--blanco);
 }
 
-.contact-info strong {
-    color: #f39c12;
-    width: 110px;
-    display: inline-block;
+/* Información de contacto */
+.contacto-info {
+    background-color: var(--blanco);
+    color: var(--morado-oscuro);
+    border: 1px solid var(--lila-claro);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.contacto-info h4 {
+    border-bottom: 2px solid var(--amarillo-dorado);
+    padding-bottom: 12px;
+}
+
+.contact-info i {
+    color: var(--morado-musical);
 }
 
 .contact-info a {
-    color: #3498db;
+    color: var(--morado-musical);
     text-decoration: none;
+    overflow-wrap: anywhere;
+    margin-left: 0 !important;
 }
 
 .contact-info a:hover {
+    color: var(--morado-oscuro);
     text-decoration: underline;
 }
 
-footer {
-    background-color: rgba(0, 0, 0, 0.4);
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-    color: #aaa;
+/* Responsive */
+@media (max-width: 575px) {
+    .contacto-img {
+        height: 180px;
+    }
+
+    .btn-contacto {
+        width: 100%;
+    }
 }
 
-footer ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 0.5rem;
+/* Noticias */
+.noticias {
+    background: var(--lila-claro);
 }
-  
+
+.noticias article {
+    padding: 10px;
+    background: var(--blanco);
+    border-radius: 8px;
+}
+
+.noticias .card-title {
+    color: var(--morado-oscuro);
+}
+
+.noticias hr {
+    border-color: var(--morado-musical);
+}
+
+@media (max-width: 991px) {
+    .noticias {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
