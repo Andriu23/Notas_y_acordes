@@ -35,6 +35,27 @@ main > .row {
     color: var(--amarillo-dorado);
 }
 
+/* Presentación de Nosotros */
+.inicio-intro {
+    padding: 30px 20px;
+    background: var(--lila-claro);
+    color: var(--morado-oscuro);
+    border-radius: 16px;
+}
+
+.inicio-intro .badge {
+    background: var(--amarillo-dorado);
+    color: var(--morado-oscuro);
+}
+
+.inicio-intro h1 {
+    color: var(--morado-musical);
+}
+
+.inicio-intro p {
+    line-height: 1.7;
+}
+
 /* Artista destacado */
 #destacado {
     height: 300px;
